@@ -1,0 +1,353 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.17.0.0
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: chong cao, MYZY, LIC=X1E74-FMDJ2-C2LL6-DSTI1-X1RVY-FKPVS
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.17
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 1 (build 61)
+Assembler:       Armasm.exe V5.06 update 1 (build 61)
+Linker/Locator:  ArmLink.exe V5.06 update 1 (build 61)
+Library Manager: ArmAr.exe V5.06 update 1 (build 61)
+Hex Converter:   FromElf.exe V5.06 update 1 (build 61)
+CPU DLL:         SARMCM3.DLL V5.17
+Dialog DLL:      DCM.DLL V1.13.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.18.0
+Dialog DLL:      TCM.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\caochong\Desktop\SO22020 4 27\主控制板 二氧化硫\UCOSIII_Main board__SO2 -2020 6 1  yanzheng -卡尔男\USER\Template.uvprojx
+Project File Date:  07/09/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 1 (build 61)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\CALIBRATION\calibration.h(23): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\EXPERMENT\experiment.h(13): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+main.c: 3 warnings, 0 errors
+compiling stm32f10x_it.c...
+compiling system_stm32f10x.c...
+compiling kalmanoperation.c...
+..\HARDWARE\LU\kalmanoperation.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\LU\kalmanoperation.c: 1 warning, 0 errors
+compiling led.c...
+compiling key.c...
+compiling beep.c...
+compiling rtc.c...
+compiling command.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\COMMAND\command.c: 1 warning, 0 errors
+compiling MMC_SD.C...
+compiling spi.c...
+compiling USART3.c...
+compiling flash.c...
+compiling communication.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\CALIBRATION\calibration.h(23): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\EXPERMENT\experiment.h(13): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\COMMUNICATIONLCD\communication.c(919): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *restrict"
+          sscanf(str,"%f",&value); 
+..\HARDWARE\COMMUNICATIONLCD\communication.c(918): warning:  #177-D: variable "temp" was declared but never referenced
+             char i;char temp;
+..\HARDWARE\COMMUNICATIONLCD\communication.c(39): warning:  #550-D: variable "weeks" was set but never used
+  static int years,months,weeks,days,hours,minutes;                                    //??????时????????
+..\HARDWARE\COMMUNICATIONLCD\communication.c: 6 warnings, 0 errors
+compiling modbus_host.c...
+compiling processing.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\CALIBRATION\calibration.h(23): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\EXPERMENT\experiment.h(13): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\LU\kalmanoperation.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\HARDWARE\PROCESSING\processing.c(195): warning:  #177-D: variable "RegNum" was declared but never referenced
+        u16 RegNum;
+..\HARDWARE\PROCESSING\processing.c(782): warning:  #940-D: missing return statement at end of non-void function "Calibration_SO2ConCenTration"
+  }
+..\HARDWARE\PROCESSING\processing.c(441): warning:  #177-D: variable "len3" was declared but never referenced
+      char FTOCHAR[10][20],len1,len2,len3,len4,i; 
+..\HARDWARE\PROCESSING\processing.c(441): warning:  #177-D: variable "len4" was declared but never referenced
+      char FTOCHAR[10][20],len1,len2,len3,len4,i; 
+..\HARDWARE\PROCESSING\processing.c(824): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                                        So2Len=sprintf(pp,"%.3f",SO2ConCenTration_AfterCal_W);
+..\HARDWARE\PROCESSING\processing.c(828): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "char *restrict"
+                                        So2Len=sprintf(pp,"%.3f",SO2ConCenTration_AfterCal);
+..\HARDWARE\PROCESSING\processing.c(1955): warning:  #940-D: missing return statement at end of non-void function "yure_jiemian"
+  }
+..\HARDWARE\PROCESSING\processing.c: 11 warnings, 0 errors
+compiling IICEEPROM.c...
+compiling variance.c...
+..\HARDWARE\Variance\variance.c(101): warning:  #940-D: missing return statement at end of non-void function "filtStack"
+         }
+..\HARDWARE\Variance\variance.c(8): warning:  #177-D: variable "Paverage" was declared but never referenced
+                 float CV_ZeroP;float *Paverage=NULL;float *Paverage2=NULL;
+..\HARDWARE\Variance\variance.c(8): warning:  #177-D: variable "Paverage2" was declared but never referenced
+                 float CV_ZeroP;float *Paverage=NULL;float *Paverage2=NULL;
+..\HARDWARE\Variance\variance.c(104): warning:  #1-D: last line of file ends without a newline
+         
+..\HARDWARE\Variance\variance.c: 4 warnings, 0 errors
+compiling datawr.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\EXPERMENT\experiment.h(13): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\DATAWRITE\datawr.c(26): warning:  #550-D: variable "Len" was set but never used
+        u8 Len;
+..\HARDWARE\DATAWRITE\datawr.c(141): warning:  #177-D: variable "len1" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(141): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(142): warning:  #177-D: variable "j" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(142): warning:  #177-D: variable "k" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(143): warning:  #177-D: variable "str" was declared but never referenced
+         char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(144): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(145): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(145): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(168): warning:  #177-D: variable "len1" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(168): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(169): warning:  #177-D: variable "j" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(169): warning:  #177-D: variable "k" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(170): warning:  #177-D: variable "str" was declared but never referenced
+         char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(171): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(172): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(172): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(195): warning:  #177-D: variable "len1" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(195): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(196): warning:  #177-D: variable "j" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(196): warning:  #177-D: variable "k" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(197): warning:  #177-D: variable "str" was declared but never referenced
+         char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(198): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(199): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(199): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(222): warning:  #177-D: variable "len1" was declared but never referenced
+        int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(222): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+        int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(223): warning:  #177-D: variable "j" was declared but never referenced
+        u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(223): warning:  #177-D: variable "k" was declared but never referenced
+        u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(224): warning:  #177-D: variable "str" was declared but never referenced
+        char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(225): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(226): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(226): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(250): warning:  #177-D: variable "len1" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(250): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(251): warning:  #177-D: variable "j" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(251): warning:  #177-D: variable "k" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(252): warning:  #177-D: variable "str" was declared but never referenced
+         char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(253): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(254): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(254): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(281): warning:  #177-D: variable "len1" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(281): warning:  #177-D: variable "Ex_SendLen" was declared but never referenced
+         int len1,Ex_SendLen;
+..\HARDWARE\DATAWRITE\datawr.c(282): warning:  #177-D: variable "j" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(282): warning:  #177-D: variable "k" was declared but never referenced
+         u32 i,j,k;
+..\HARDWARE\DATAWRITE\datawr.c(283): warning:  #177-D: variable "str" was declared but never referenced
+         char str[30]={0};
+..\HARDWARE\DATAWRITE\datawr.c(284): warning:  #177-D: variable "File_Size" was declared but never referenced
+        u32 File_Size;
+..\HARDWARE\DATAWRITE\datawr.c(285): warning:  #177-D: variable "index" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c(285): warning:  #177-D: variable "total" was declared but never referenced
+        u16 index,total;
+..\HARDWARE\DATAWRITE\datawr.c: 51 warnings, 0 errors
+compiling output.c...
+compiling cmd_queue.c...
+compiling calibration.c...
+..\HARDWARE\CALIBRATION\calibration.h(23): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\CALIBRATION\calibration.c(22): warning:  #177-D: variable "x3" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(22): warning:  #177-D: variable "y3" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(23): warning:  #177-D: variable "len4" was declared but never referenced
+      char FTOCHAR[10][20],len1,len2,len3,len4,i; 
+..\HARDWARE\CALIBRATION\calibration.c(297): warning:  #111-D: statement is unreachable
+                        flag=1;
+..\HARDWARE\CALIBRATION\calibration.c(336): warning:  #177-D: variable "err" was declared but never referenced
+        int i,j; OS_ERR err;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "x1" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "x2" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "y1" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "y2" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "x3" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(337): warning:  #177-D: variable "y3" was declared but never referenced
+          float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(426): warning:  #177-D: variable "k" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(426): warning:  #177-D: variable "x3" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(426): warning:  #177-D: variable "y3" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(458): warning:  #177-D: variable "k" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(458): warning:  #177-D: variable "x3" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(458): warning:  #177-D: variable "y3" was declared but never referenced
+         u8 i,j,k; float x1,x2,y1,y2,x3,y3;
+..\HARDWARE\CALIBRATION\calibration.c(506): warning:  #1-D: last line of file ends without a newline
+   
+..\HARDWARE\CALIBRATION\calibration.c(17): warning:  #550-D: variable "fun1" was set but never used
+  static fun_ptr1     fun1;
+..\HARDWARE\CALIBRATION\calibration.c: 21 warnings, 0 errors
+compiling experiment.c...
+..\HARDWARE\EXPERMENT\experiment.h(13): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\HARDWARE\EXPERMENT\experiment.c(13): warning:  #177-D: variable "i" was declared but never referenced
+        static char  i =0,flag=0;
+..\HARDWARE\EXPERMENT\experiment.c(72): warning:  #1-D: last line of file ends without a newline
+   }
+..\HARDWARE\EXPERMENT\experiment.c: 4 warnings, 0 errors
+compiling delay.c...
+compiling sys.c...
+compiling usart.c...
+compiling core_cm3.c...
+assembling startup_stm32f10x_xl.s...
+compiling misc.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_usart.c...
+compiling stm32f10x_rcc.c...
+compiling stm32f10x_rtc.c...
+compiling stm32f10x_pwr.c...
+compiling stm32f10x_bkp.c...
+compiling stm32f10x_tim.c...
+compiling stm32f10x_iwdg.c...
+compiling stm32f10x_spi.c...
+compiling malloc.c...
+compiling bsp.c...
+compiling cpu_core.c...
+compiling cpu_c.c...
+assembling cpu_a.asm...
+compiling lib_ascii.c...
+compiling lib_math.c...
+compiling lib_mem.c...
+compiling lib_str.c...
+assembling lib_mem_a.asm...
+compiling os_cfg_app.c...
+compiling os_core.c...
+compiling os_dbg.c...
+compiling os_flag.c...
+compiling os_int.c...
+compiling os_mem.c...
+compiling os_msg.c...
+compiling os_mutex.c...
+compiling os_pend_multi.c...
+compiling os_prio.c...
+compiling os_q.c...
+compiling os_sem.c...
+compiling os_stat.c...
+compiling os_task.c...
+compiling os_tick.c...
+compiling os_time.c...
+compiling os_tmr.c...
+compiling os_var.c...
+assembling os_cpu_a.s...
+compiling os_cpu_c.c...
+compiling os_app_hooks.c...
+compiling exfuns.c...
+..\FATFS\exfuns\exfuns.c(52): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+        fatbuff_temp=(u8 *)mymalloc(512); // 为发???莼捍??????肟占?
+..\FATFS\exfuns\exfuns.c(55): warning:  #513-D: a value of type "u8 *" cannot be assigned to an entity of type "char *"
+        FN_SaveCatalog[i] =(u8 *)mymalloc(20);
+..\FATFS\exfuns\exfuns.c: 2 warnings, 0 errors
+compiling fattester.c...
+..\HARDWARE\COMMUNICATIONLCD\communication.h(55): warning:  #161-D: unrecognized #pragma
+  #pragma  apop;
+..\FATFS\exfuns\fattester.c: 1 warning, 0 errors
+compiling diskio.c...
+compiling ff.c...
+compiling cc936.c...
+compiling mbcrc.c...
+compiling mbascii.c...
+compiling mbrtu.c...
+compiling mbtcp.c...
+compiling mbfunccoils.c...
+compiling mbfuncdiag.c...
+compiling mbfuncdisc.c...
+compiling mbfuncholding.c...
+compiling mbfuncinput.c...
+compiling mbfuncother.c...
+compiling mbutils.c...
+compiling mb.c...
+compiling portevent.c...
+compiling portserial.c...
+compiling porttimer.c...
+linking...
+Program Size: Code=95540 RO-data=177280 RW-data=1544 ZI-data=67248  
+FromELF: creating hex file...
+"..\OBJ\MALLOC.axf" - 0 Error(s), 105 Warning(s).
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\caochong\Desktop\SO22020 4 27\主控制板 二氧化硫\UCOSIII_Main board__SO2 -2020 6 1  yanzheng -卡尔男\USER\RTE
+  C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:29
+</pre>
+</body>
+</html>

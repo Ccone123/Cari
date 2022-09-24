@@ -1,0 +1,121 @@
+ case 0x02:
+										          Input.CRAteTEM_LowerLimit=value;//机箱温度上下限
+									 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(30,Input.CRAteTEM_LowerLimit*1000);    //address :30
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);		
+									              break;
+									 case 0x05:
+										         Input.CRAteTEM_UpperLimit=value;
+									 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(38,Input.CRAteTEM_UpperLimit*1000);   //address:38
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									               break;
+									 case 0x09:
+										          Input.TECTEM_LowerLimit=value;//PMT温度上下限
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(46,Input.TECTEM_LowerLimit*1000);   //address:46
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);		
+									               break;
+									 case 10 :    
+                              Input.TECTEM_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(54,Input.TECTEM_UpperLimit*1000);   //address:54
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+                                 break;
+                   case 26 :   
+															Input.CaseTEM_LowerLimit=value;//反应室温度
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(62,Input.CaseTEM_LowerLimit*1000);   //address:62
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);		
+																 break;
+									 case 27:
+										          Input.CaseTEM_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(70,Input.CaseTEM_LowerLimit*1000);   //address:70
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+										             break;
+									 case 17:
+										         Input.SampGasP_LowerLimit=value; //采样压力
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(78,Input.SampGasP_LowerLimit*1000);   //address:78
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                break;
+									 case 18:
+										        Input.SampGasP_UpperLimit=value;      
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(86,Input.SampGasP_LowerLimit*1000);   //address:86
+							   	OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);		
+									                break;
+									 case 13:
+									           Input.CaseGasPRESSURE_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(94,Input.CaseGasPRESSURE_LowerLimit*1000);   //address:94
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                break;
+									 case 15:
+										         Input.CaseGasPRESSURE_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(102,Input.CaseGasPRESSURE_LowerLimit*1000);   //address:102
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									               break;
+									 case 31:
+										             Input.GASFLOW_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(110,Input.CaseGasPRESSURE_LowerLimit*1000);   //address:110
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                 break;
+									 case 32:
+										             Input.GASFLOW_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(118,Input.CaseGasPRESSURE_LowerLimit*1000);   //address:118
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);		
+									                 break;
+									 case 36:
+										               Input.PMTSampVL_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(126,Input.PMTSampVL_LowerLimit*1000);   //address:126
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                  break;
+									 case 38:
+										               Input.PMTSampVL_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(134,Input.PMTSampVL_LowerLimit*1000);   //address:134
+							    	OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                  break;
+									 
+									 case 40:       
+										               Input.REFVOL_PD_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(142,Input.PMTSampVL_LowerLimit*1000);   //address:142
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                    break;
+									 case 41:
+										                 Input.REFVOL_PD_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(150,Input.PMTSampVL_LowerLimit*1000);   //address:150
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                   break;
+									 
+									 case 43:    
+										                  Input.REFVOL_PMT_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(158,Input.REFVOL_PMT_LowerLimit*1000);   //address:158
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                 break;
+									 case 44:
+										                  Input.REFVOL_PMT_UpperLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(166,Input.REFVOL_PMT_UpperLimit*1000);   //address:166
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                   break;
+									 case 46:   
+										                   Input.VEF_LowerLimit=value;
+									 	 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(174,Input.VEF_LowerLimit*1000);   //address:174
+									OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NONE,&err);	
+									                    break;
+									 case 47:
+										                   Input.VEF_UpperLimit=value;
+									 OSMutexPend (&OSI2C1Used_Mutex,0,OS_OPT_PEND_BLOCKING,0,&err);	
+									 SaveEpData(182,Input.VEF_LowerLimit*1000);   //address:182
+									 OSMutexPost(&OSI2C1Used_Mutex,OS_OPT_POST_NON
